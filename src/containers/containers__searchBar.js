@@ -40,7 +40,6 @@ class SearchBar extends Component {
   }
 }
 
-
 function mapDispatchToProps(dispatch) {
     return bindActionCreators({ fetchArtist }, dispatch);
 }

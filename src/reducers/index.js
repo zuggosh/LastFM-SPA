@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import FETCH_ARTIST from './reducer_artistInfo';
+import ArtistReducer  from './reducer_artistInfo';
 
 const rootReducer = combineReducers({
-  artist: FETCH_ARTIST
+  artist: ArtistReducer
 });
 
 export default rootReducer;
