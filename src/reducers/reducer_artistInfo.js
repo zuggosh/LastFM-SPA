@@ -3,7 +3,7 @@ import { FETCH_ARTIST } from '../actions/index';
 export default function (state = [], action){
     switch (action.type){
         case FETCH_ARTIST:
-            state.splice(0,state.length);
+            state = [];
             // return state.concat([ action.payload.data ]);
             return [action.payload.data.artist, ...state]; //same above line code
     }
