@@ -5,15 +5,13 @@ import InfoBlock from '../components/artist_info';
 
 
 class ArtistBlocks extends Component{
-
-  renderArtist(data){
-    return (
-      <div>
-        <InfoBlock key={data.name} props={data}/>
-      </div>
-    )
+  renderArtist (data){
+      return (
+          <div>
+            <InfoBlock data={data}  />
+          </div>
+      );
   }
-
 
   render(){
     return(
