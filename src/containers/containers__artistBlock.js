@@ -7,7 +7,7 @@ import InfoBlock from '../components/artist_info';
 class ArtistBlocks extends Component{
   renderArtist (data){
       return (
-          <div>
+          <div key={data.mbid}>
             <InfoBlock data={data}  />
           </div>
       );

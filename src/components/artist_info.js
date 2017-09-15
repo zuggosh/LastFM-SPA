@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default (props) => {
-  console.log(props);
   return(
         <div key={props.data.mbid}>
             <div>{props.data.name}</div>
