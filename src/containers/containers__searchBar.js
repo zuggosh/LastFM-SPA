@@ -9,7 +9,6 @@ import { fetchArtistAlbums } from '../actions/getArtistAlbums';
 class SearchBar extends Component {
   constructor(props){
     super(props);
-
     this.state = { value: '' };
     this.onInputChange = this.onInputChange.bind(this);
     this.onFormSubmit = this.onFormSubmit.bind(this);
@@ -29,15 +28,15 @@ class SearchBar extends Component {
 
   render (){
     return(
-      <form onSubmit={this.onFormSubmit} className='input-group'>
+      <form onSubmit={this.onFormSubmit} className="searchBar">
         <input
             placeholder="enter artist... "
-            className=""
+            className="searchBar__input"
             value={this.state.value}
             onChange={this.onInputChange}
         />
-        <span className="">
-            <button type="submit" className="">Submit</button>
+        <span className="searchBar__btnWrapper">
+            <button type="submit" className="searchBar__btn">Submit</button>
         </span>
       </form>
     )
@@ -48,7 +47,7 @@ function mapDispatchToProps(dispatch) {
   return {
     fetchArtist: bindActionCreators(fetchArtist, dispatch),
     fetchArtistTracks: bindActionCreators(fetchArtistTracks, dispatch),
-    fetchArtistAlbums: bindActionCreators(fetchArtistAlbums, dispatch),
+    fetchArtistAlbums: bindActionCreators(fetchArtistAlbums, dispatch)
   };
 }
 

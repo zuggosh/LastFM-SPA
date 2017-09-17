@@ -1,8 +1,8 @@
-import { FETCH_ARTISTSONGS } from '../actions/getArtistTracks';
+import { FETCH_ARTISTALBUMS } from '../actions/getArtistAlbums';
 
 export default function (state = [], action){
     switch (action.type){
-        case FETCH_ARTISTSONGS:
+        case FETCH_ARTISTALBUMS:
             state = [];
             // return state.concat([ action.payload.data ]);
             return [action.payload.data, ...state]; //same above line code
