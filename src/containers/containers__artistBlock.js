@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import InfoBlock from '../components/artist_info';
 
 
+
 class ArtistBlocks extends Component{
   renderArtist (data){
       return (
@@ -12,18 +13,25 @@ class ArtistBlocks extends Component{
           </div>
       );
   }
+  renderArtistTracks(data){
+     console.log(data);
+  }
 
   render(){
     return(
       <div>
         {this.props.artist.map(this.renderArtist)}
+        {this.props.artistTracks.map(this.renderArtistTracks)}
       </div>
     )
   }
 }
 
-function mapStateToProps( {artist} ) {
-    return {artist};
+function mapStateToProps( state ) {
+    return {
+      artist: state.artist,
+      artistTracks: state.artistTracks
+    };
 }
 
 export default connect(mapStateToProps)(ArtistBlocks);

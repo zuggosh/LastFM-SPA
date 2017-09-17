@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import { fetchArtist } from '../actions/index';
+import { fetchArtist } from '../actions/getArtistInfo';
+import { fetchArtistTracks } from '../actions/getArtistTracks';
+import { fetchArtistAlbums } from '../actions/getArtistAlbums';
 
 class SearchBar extends Component {
   constructor(props){
@@ -20,6 +22,8 @@ class SearchBar extends Component {
   onFormSubmit(e){
     e.preventDefault();
     this.props.fetchArtist(this.state.value);
+    this.props.fetchArtistTracks(this.state.value);
+    this.props.fetchArtistAlbums(this.state.value);
     this.setState({value: ''});
   }
 
@@ -41,7 +45,11 @@ class SearchBar extends Component {
 }
 
 function mapDispatchToProps(dispatch) {
-    return bindActionCreators({ fetchArtist }, dispatch);
+  return {
+    fetchArtist: bindActionCreators(fetchArtist, dispatch),
+    fetchArtistTracks: bindActionCreators(fetchArtistTracks, dispatch),
+    fetchArtistAlbums: bindActionCreators(fetchArtistAlbums, dispatch),
+  };
 }
 
 export default connect(null, mapDispatchToProps) (SearchBar);
