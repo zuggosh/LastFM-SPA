@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 
-import BlockArtistInfo from '../components/artist_info';
-import BlockArtistAlbums from '../components/artist_albums';
-import BlockArtistTrack from '../components/artist_tracks';
+import BlockArtistInfo from '../components/artist_info/artist_info';
+import BlockArtistAlbums from '../components/artist_albums/artist_albums';
+import BlockArtistTrack from '../components/artist_tracks/artist_tracks';
 
 
 class ArtistBlocks extends Component{

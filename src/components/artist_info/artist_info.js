@@ -1,4 +1,5 @@
 import React from 'react';
+import './artist_info.scss';
 
 export default (props) => {
   return(
