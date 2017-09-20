@@ -1,0 +1,128 @@
+.ArtistInfo{
+  &__nameWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__name{
+    font-size: 36px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 3px solid #5d294f;
+    color: #414141;
+    text-align: center;
+  }
+  &__tagsBlock{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &__tag{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: #414141;
+    background-color: rgba(226, 61, 1, 0.59);
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 14px;
+  }
+  &__numberWrap{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  &__numberStat{
+    padding-right: 12px;
+  }
+  &__logoWrapper{
+    float: left;
+    background-color: #5d294f;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+  &__logo{
+    width: 100%;
+  }
+  &__bio{
+    background-color: #fbfcee;
+    font-size: 20px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: justify;
+    font-weight: 400;
+    color: #5d294f;
+  }
+  &__similarText{
+    padding-top: 25px;
+    padding-left: 5px;
+    font-size: 24px;
+    color: #5d294f;
+  }
+  &__similarBlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 5px;
+    padding-bottom: 25px;
+  }
+  &__similarName{
+    text-align: center;
+    overflow: hidden;
+    color: #5d294f;
+    font-size: 24px;
+  }
+  &__similarImgWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  &__similarImg{
+    width: 100%;
+    background-color: #5d294f;
+  }
+}
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+
+}
+
+/**/
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 576px) {
+
+}
+
+/**/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+
+}
+
+/**/
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+
+}
+
+/**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+}

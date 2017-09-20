@@ -3,10 +3,14 @@ import './artist_info.scss';
 
 export default (props) => {
   return(
-    <div className="ArtistInfo" key={props.data.mbid}>
+    <div className="ArtistInfo row" key={props.data.mbid}>
       <div className="col-12 col-lg-12">
-        <div className="ArtistInfo__name">{props.data.name}</div>
+        <div className="ArtistInfo__nameWrapper">
+          <div className="ArtistInfo__name">{props.data.name}</div>
+        </div>
+
         <div className="ArtistInfo__tagsBlock">
+            Tags:
             { props.data.tags.tag.map((item, j) =>
                 <div className="ArtistInfo__tag" key={item.name}>
                     {item.name}
@@ -15,8 +19,14 @@ export default (props) => {
         </div>
       </div>
       <div className="col-12 col-lg-12">
-        <div className="ArtistInfo__listeners">{props.data.stats.listeners}</div>
-        <div className="ArtistInfo__playcount">{props.data.stats.playcount}</div>
+        <div className="ArtistInfo__numberWrap">
+          <div className="ArtistInfo__numberStat">
+              listeners: {props.data.stats.listeners}
+          </div>
+          <div className="ArtistInfo__numberStat">
+              playcount: {props.data.stats.playcount}
+          </div>
+        </div>
       </div>
       <div className="col-12 col-lg-12">
         <div className="ArtistInfo__logoWrapper">
@@ -27,6 +37,7 @@ export default (props) => {
         </div>
       </div>
       <div className="col-12 col-lg-12">
+        <div className="ArtistInfo__similarText">Similar artist:</div>
         <div className="ArtistInfo__similarBlock">
             { props.data.similar.artist.map((item, i) =>
                 <div className="ArtistInfo__similar" key={i}>

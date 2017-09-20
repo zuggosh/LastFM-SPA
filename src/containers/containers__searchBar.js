@@ -6,6 +6,8 @@ import { fetchArtist } from '../actions/getArtistInfo';
 import { fetchArtistTracks } from '../actions/getArtistTracks';
 import { fetchArtistAlbums } from '../actions/getArtistAlbums';
 
+import './searchBar.scss';
+
 class SearchBar extends Component {
   constructor(props){
     super(props);
@@ -28,17 +30,19 @@ class SearchBar extends Component {
 
   render (){
     return(
-      <form onSubmit={this.onFormSubmit} className="searchBar">
-        <input
-            placeholder="enter artist... "
-            className="searchBar__input"
-            value={this.state.value}
-            onChange={this.onInputChange}
-        />
-        <span className="searchBar__btnWrapper">
-            <button type="submit" className="searchBar__btn">Submit</button>
-        </span>
-      </form>
+      <div className="searchBar">
+        <form onSubmit={this.onFormSubmit} className="searchBar__form">
+          <input
+              placeholder="enter artist... "
+              className="searchBar__input"
+              value={this.state.value}
+              onChange={this.onInputChange}
+          />
+          <span className="searchBar__btnWrapper">
+              <button type="submit" className="searchBar__btn">Submit</button>
+          </span>
+        </form>
+      </div>
     )
   }
 }
