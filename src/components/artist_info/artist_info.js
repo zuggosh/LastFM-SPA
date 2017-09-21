@@ -29,12 +29,14 @@ export default (props) => {
         </div>
       </div>
       <div className="col-12 col-lg-12">
-        <div className="ArtistInfo__logoWrapper">
-            <img className="ArtistInfo__logo" src={props.data.image[5]['#text']}/>
-        </div>
-        <div className="ArtistInfo__bio">
-            {props.data.bio.content}
-        </div>
+          <div className="ArtistInfo__logoBlock">
+            <div className="ArtistInfo__logoWrapper">
+                <img className="ArtistInfo__logo" src={props.data.image[5]['#text']}/>
+            </div>
+            <div className="ArtistInfo__bio">
+                {props.data.bio.content}
+            </div>
+          </div>
       </div>
       <div className="col-12 col-lg-12">
         <div className="ArtistInfo__similarText">Similar artist:</div>

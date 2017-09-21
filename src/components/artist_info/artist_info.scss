@@ -42,6 +42,8 @@
   &__logoWrapper{
     float: left;
     background-color: #5d294f;
+    margin-top: 15px;
+    margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 15px;
   }
@@ -89,6 +91,10 @@
   &__similarImg{
     width: 100%;
     background-color: #5d294f;
+  }
+  &__logoBlock{
+    background-color: #fbfcee;
+    height: 100%;
   }
 }
 
