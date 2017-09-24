@@ -12,7 +12,7 @@ export default (props) => {
               <div key={i} className="col-6 col-lg-4">
                 <div className="albumsBlock__album">
                   <div className="albumsBlock__wrapperImg">
-                    <img className="albumsBlock__img" src={item.image[1]['#text'] ? item.image[1]['#text'] : '../img/default.png'}  alt={item.name}/>
+                    <img className="albumsBlock__img" src={item.image[1]['#text'] ? item.image[1]['#text'] : 'src/img/defaultAlb.png'}  alt={item.name}/>
                   </div>
                   <div className="albumsBlock__albumTitle">
                     {item.name}

@@ -10,6 +10,7 @@
     font-size: 36px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-bottom: 20px;
     border-bottom: 3px solid #5d294f;
     color: #414141;
     text-align: center;
@@ -33,6 +34,9 @@
   }
   &__albumTitle{
     padding-left: 5px;
+  }
+  &__img{
+    width: 100%;
   }
 }
 

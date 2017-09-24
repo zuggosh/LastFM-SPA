@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import { fetchArtist } from '../actions/getArtistInfo';
-import { fetchArtistTracks } from '../actions/getArtistTracks';
-import { fetchArtistAlbums } from '../actions/getArtistAlbums';
+import { fetchArtist } from '../../actions/getArtistInfo';
+import { fetchArtistTracks } from '../../actions/getArtistTracks';
+import { fetchArtistAlbums } from '../../actions/getArtistAlbums';
 
 import './searchBar.scss';
 
