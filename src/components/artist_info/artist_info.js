@@ -43,10 +43,10 @@ export default (props) => {
         <div className="ArtistInfo__similarBlock">
             { props.data.similar.artist.map((item, i) =>
                 <div className="ArtistInfo__similar" key={i}>
-                    <div className="ArtistInfo__similarName">{item.name}</div>
                     <div className="ArtistInfo__similarImgWrapper">
                         <img className="ArtistInfo__similarImg" src={item.image[5]['#text']} alt={item.name} />
                     </div>
+                    <div className="ArtistInfo__similarName">{item.name}</div>
                 </div>)
             }
         </div>
