@@ -6,16 +6,13 @@ import { selectTab } from '../../actions/selectTab';
 
 import './header.scss';
 
-const test = [
-  {title: 'page 1'},
-  {title: 'page 2'}
-]
+const test = [];
 
 class headerBlock extends Component{
   renderTabs(tabs){
     return this.props.tabs.map( (tab) => {
       return (
-        <div>{tab.title}</div>
+        <div key={tab.title}>{tab.title}</div>
       )
     })
   }
