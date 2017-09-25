@@ -7,12 +7,17 @@ import { selectTab } from '../../actions/selectTab';
 import './header.scss';
 
 class headerBlock extends Component{
+
   renderTabs(tabs){
     return(
       tabs.map((item, j) =>
-          <div key={j}>{item.title}</div>
+          <div
+              onClick={ () => this.props.selectTab(item) }
+              key={j}>
+              {item.title}
+          </div>
       )
-    )
+    );
   }
 
   render(){
