@@ -6,22 +6,19 @@ import { selectTab } from '../../actions/selectTab';
 
 import './header.scss';
 
-const test = [];
-
 class headerBlock extends Component{
   renderTabs(tabs){
-    return this.props.tabs.map( (tab) => {
-      return (
-        <div key={tab.title}>{tab.title}</div>
+    return(
+      tabs.map((item, j) =>
+          <div key={j}>{item.title}</div>
       )
-    })
+    )
   }
-
 
   render(){
     return(
       <header className="header">
-        {this.renderTabs(test)}
+        {this.renderTabs(this.props.tabs)}
       </header>
     )
   }
