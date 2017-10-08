@@ -21,12 +21,12 @@ class RenderSelectTab extends Component{
 
   render(){
     if (!this.props.tab){
-      return <div>хуй знает что!</div>;
+      return <div>select tab!</div>;
     } else if (this.props.tab.artists){
       return (
         <div>
           {this.props.tab.artists.artist.map(this.renderArtists)}
-        </div>
+        </div>firebase login
       )
     } else if (this.props.tab.tracks){
       return (
