@@ -1,4 +1,13 @@
-
+.topTagBlock{
+  &__tag{
+    color: #5d294f;
+    margin: 5px 0;
+    padding: 5px;
+    background-color: rgba(226, 61, 1, 0.25);
+    border-radius: 5px;
+    font-weight: 500;
+  }
+}
 
 
 /*==========  Mobile First  ==========*/

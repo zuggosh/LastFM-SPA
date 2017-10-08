@@ -2,7 +2,6 @@ import React from 'react';
 import './topTrack_tab.scss';
 
 export default (props) => {
-    console.log(props);
     return(
         <div className="topTrackBlock">
             <div className="topTrackBlock__imgWrapper">

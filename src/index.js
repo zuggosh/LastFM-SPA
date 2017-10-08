@@ -15,4 +15,4 @@ ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
     <App />
   </Provider>
-  , document.querySelector('.page'));
+  , document.querySelector('.root'));

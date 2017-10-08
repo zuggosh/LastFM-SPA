@@ -38,9 +38,9 @@ class SearchBar extends Component {
               value={this.state.value}
               onChange={this.onInputChange}
           />
-          <span className="searchBar__btnWrapper">
+          <div className="searchBar__btnWrapper">
               <button type="submit" className="searchBar__btn">Submit</button>
-          </span>
+          </div>
         </form>
       </div>
     )

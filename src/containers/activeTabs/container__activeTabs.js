@@ -48,7 +48,6 @@ class RenderSelectTab extends Component{
 }
 
 function mapStateToProps(state){
-  console.log(state.activeTab);
   return {
     tab: state.activeTab
   };

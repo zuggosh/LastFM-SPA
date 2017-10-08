@@ -1,4 +1,26 @@
-
+.topArtistBlock{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px 0;
+  &__imgWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 60px;
+    flex-shrink: 0;
+  }
+  &__name{
+    padding-left: 5px;
+    color: #5d294f;
+    font-weight: 500;
+  }
+  &__img{
+    width: 100%;
+  }
+}
 
 
 /*==========  Mobile First  ==========*/

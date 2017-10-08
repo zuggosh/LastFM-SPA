@@ -13,7 +13,8 @@ class headerBlock extends Component{
       tabs.map((item, j) =>
           <div
               onClick={ () => this.props.selectTab(item) }
-              key={j}>
+              key={j}
+              className="tab">
               {item.title}
           </div>
       )
