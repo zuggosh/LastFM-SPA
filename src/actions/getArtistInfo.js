@@ -1,6 +1,5 @@
 import axios from 'axios';
-
-const API_KEY = 'ce5ceabebbe101e3e04685022e994525';
+import { API_KEY }  from './variables';
 
 export const FETCH_ARTIST = 'FETCH_ARTIST';
 

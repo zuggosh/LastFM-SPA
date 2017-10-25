@@ -26,7 +26,7 @@ class RenderSelectTab extends Component{
       return (
         <div>
           {this.props.tab.artists.artist.map(this.renderArtists)}
-        </div>firebase login
+        </div>
       )
     } else if (this.props.tab.tracks){
       return (
